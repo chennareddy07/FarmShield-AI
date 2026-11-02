@@ -1,0 +1,501 @@
+{
+  "registry_version": "1.0.0",
+  "reviewed_at": "2026-11-01",
+  "geographic_scope": {
+    "state": "Andhra Pradesh",
+    "district_scope": "A source is district-applicable only when the source explicitly identifies that district. Named study locations are not silently converted to district claims."
+  },
+  "status_definitions": {
+    "source_verified": "The cited source was directly accessible and its cited bibliographic/content details were checked. This is not agronomic approval.",
+    "source_unverified": "The source could not be independently accessed or its claim could not be verified.",
+    "expert_review_required": "The source is accessible, but local applicability, interpretation or operational use needs qualified review.",
+    "expert_approved": "A named agricultural reviewer has approved the evidence and its stated scope.",
+    "conflicting_evidence": "Accessible sources disagree on a claim; neither claim is silently selected.",
+    "insufficient_evidence": "No verified, applicable evidence was found for this crop-stage-concern combination."
+  },
+  "required_concerns": [
+    "rainfall",
+    "excess_rainfall",
+    "dry_spell",
+    "high_temperature",
+    "low_temperature",
+    "humidity",
+    "wind",
+    "severe_weather_warning"
+  ],
+  "stage_evidence": [
+    {
+      "crop_id": "paddy",
+      "growth_stage_id": "flowering",
+      "concern": "high_temperature",
+      "document_id": "KB-PADDY-HEAT-JIRCAS-JARQ",
+      "evidence_status": "expert_review_required",
+      "source_fact": "Controlled phytotron study; rice fertility response depended on temperature, exposure duration and variety.",
+      "farmshield_interpretation": "Not a local operational threshold; daily forecast maximum does not represent the reported controlled exposure window."
+    },
+    {
+      "crop_id": "groundnut",
+      "growth_stage_id": "flowering",
+      "concern": "dry_spell",
+      "document_id": "KB-GNUT-WATERSTRESS-ICAR",
+      "evidence_status": "expert_review_required",
+      "source_fact": "The accessible abstract describes imposed water-stress treatments during flowering in one experiment.",
+      "farmshield_interpretation": "The study's days-after-sowing treatment interval is not a regional calendar or rainfall trigger."
+    },
+    {
+      "crop_id": "groundnut",
+      "growth_stage_id": "pegging",
+      "concern": "dry_spell",
+      "document_id": "KB-GNUT-WATERSTRESS-ICAR",
+      "evidence_status": "expert_review_required",
+      "source_fact": "The accessible abstract describes imposed water-stress treatments during pegging in one experiment.",
+      "farmshield_interpretation": "The study's days-after-sowing treatment interval is not a regional calendar or rainfall trigger."
+    },
+    {
+      "crop_id": "groundnut",
+      "growth_stage_id": "pod_formation",
+      "concern": "dry_spell",
+      "document_id": "KB-GNUT-WATERSTRESS-ICAR",
+      "evidence_status": "expert_review_required",
+      "source_fact": "The accessible abstract describes imposed water-stress treatments during pod formation in one experiment.",
+      "farmshield_interpretation": "The study's days-after-sowing treatment interval is not a regional calendar or rainfall trigger."
+    },
+    {
+      "crop_id": "groundnut",
+      "growth_stage_id": "pod_development",
+      "concern": "dry_spell",
+      "document_id": "KB-GNUT-WATERSTRESS-ICAR",
+      "evidence_status": "expert_review_required",
+      "source_fact": "The accessible abstract reports pod development as sensitive to imposed water stress for pod yield and shelling percentage in the described experiment.",
+      "farmshield_interpretation": "This finding is not a quantitative dry-spell trigger and does not establish a local action threshold."
+    }
+  ],
+  "general_guidance": [
+    {
+      "evidence_id": "EV-KB-KB-ICAR-KHARIF-2025-PADDY-ZONAL",
+      "document_id": "KB-ICAR-KHARIF-2025-PADDY-ZONAL",
+      "crop_id": "paddy",
+      "crop_stage": "Zone- and condition-specific varietal selection; late nursery transplanting and late planting are named",
+      "concern": "variety_selection",
+      "source_title": "ICAR Kharif Agro-Advisories for Farmers 2025",
+      "institution": "Indian Council of Agricultural Research (ICAR), New Delhi",
+      "original_url": "https://icar.gov.in/sites/default/files/Circulars/ICAR%20En-Kharif%20Agro-Advisories%20for%20Farmers%202025.pdf",
+      "publication_date": "May 2025",
+      "page_reference": "PDF p.20 / printed p.54",
+      "source_section": "Andhra Pradesh paddy varieties by zone and crop/planting condition",
+      "applicability": {
+        "state": "Andhra Pradesh",
+        "districts": [],
+        "seasons": ["Kharif"],
+        "named_zones": ["Godavari", "Krishna", "North Coastal", "HAT", "Southern"]
+      },
+      "source_verification_status": "source_verified",
+      "source_access_status": "pdf_verified",
+      "expert_review_status": "expert_review_required",
+      "evidence_status": "expert_review_required",
+      "source_fact": "The ICAR Andhra Pradesh section lists paddy varieties by named zones and separately addresses scarce-rainfall/drought-prone, flood-prone, saline-soil and brown-planthopper-prone contexts, late nursery transplanting and late planting.",
+      "limitations": "The publication does not map its recommendations to every district. Confirm current local suitability with an agricultural officer. This 2025 Kharif publication is not a current-season advisory and is not evidence for a FarmShield risk threshold."
+    },
+    {
+      "evidence_id": "EV-KB-KB-ICAR-KHARIF-2025-PADDY-SUBMERGENCE",
+      "document_id": "KB-ICAR-KHARIF-2025-PADDY-SUBMERGENCE",
+      "crop_id": "paddy",
+      "crop_stage": "Boot-leaf or 'lowering' stage (source wording; not mapped to FarmShield stages)",
+      "concern": "submergence",
+      "source_title": "ICAR Kharif Agro-Advisories for Farmers 2025",
+      "institution": "Indian Council of Agricultural Research (ICAR), New Delhi",
+      "original_url": "https://icar.gov.in/sites/default/files/Circulars/ICAR%20En-Kharif%20Agro-Advisories%20for%20Farmers%202025.pdf",
+      "publication_date": "May 2025",
+      "page_reference": "PDF p.22 / printed p.76",
+      "source_section": "Andhra Pradesh, Precautions during natural calamities",
+      "applicability": {
+        "state": "Andhra Pradesh",
+        "districts": [],
+        "seasons": ["Kharif"]
+      },
+      "source_verification_status": "source_verified",
+      "source_access_status": "pdf_verified",
+      "expert_review_status": "expert_review_required",
+      "evidence_status": "expert_review_required",
+      "source_fact": "The source reports that submergence for more than 1 to 2 days at the named stages may impair panicle exertion; water accumulation in spikelets may reduce fertilisation and lead to chaffy seeds.",
+      "limitations": "The source wording is retained and is not mapped to FarmShield's growth-stage taxonomy. This duration is not a validated risk threshold or forecast rule. The guidance is not district-specific and needs local expert review."
+    },
+    {
+      "evidence_id": "EV-KB-KB-ICAR-KHARIF-2025-PADDY-GREEN-MANURE",
+      "document_id": "KB-ICAR-KHARIF-2025-PADDY-GREEN-MANURE",
+      "crop_id": "paddy",
+      "crop_stage": "Before paddy cultivation",
+      "concern": "cultivation",
+      "source_title": "ICAR Kharif Agro-Advisories for Farmers 2025",
+      "institution": "Indian Council of Agricultural Research (ICAR), New Delhi",
+      "original_url": "https://icar.gov.in/sites/default/files/Circulars/ICAR%20En-Kharif%20Agro-Advisories%20for%20Farmers%202025.pdf",
+      "publication_date": "May 2025",
+      "page_reference": "PDF p.22 / printed p.76",
+      "source_section": "Andhra Pradesh paddy, Fertilizer Application section (preceding green-manure crops only)",
+      "applicability": {
+        "state": "Andhra Pradesh",
+        "districts": [],
+        "seasons": ["Kharif"]
+      },
+      "source_verification_status": "source_verified",
+      "source_access_status": "pdf_verified",
+      "expert_review_status": "expert_review_required",
+      "evidence_status": "expert_review_required",
+      "source_fact": "The source names Dhaincha, Sunhemp, Pillipesara and Cowpea as green-manure crops to grow before paddy.",
+      "limitations": "Only the preceding-crop statement is included; fertilizer rates and prescriptions are intentionally excluded. The publication does not establish district-specific applicability."
+    },
+    {
+      "evidence_id": "EV-KB-KB-ICAR-KHARIF-2025-PADDY-BLB",
+      "document_id": "KB-ICAR-KHARIF-2025-PADDY-BLB",
+      "crop_id": "paddy",
+      "crop_stage": "Transplanting; affected-stubble management",
+      "concern": "pest_disease",
+      "source_title": "ICAR Kharif Agro-Advisories for Farmers 2025",
+      "institution": "Indian Council of Agricultural Research (ICAR), New Delhi",
+      "original_url": "https://icar.gov.in/sites/default/files/Circulars/ICAR%20En-Kharif%20Agro-Advisories%20for%20Farmers%202025.pdf",
+      "publication_date": "May 2025",
+      "page_reference": "PDF p.22 / printed p.76",
+      "source_section": "Andhra Pradesh paddy, Bacterial leaf blight entry (non-chemical statements only)",
+      "applicability": {
+        "state": "Andhra Pradesh",
+        "districts": [],
+        "seasons": ["Kharif"]
+      },
+      "source_verification_status": "source_verified",
+      "source_access_status": "pdf_verified",
+      "expert_review_status": "expert_review_required",
+      "evidence_status": "expert_review_required",
+      "source_fact": "Under its bacterial leaf blight entry, ICAR says affected stubbles may be destroyed by ploughing and advises against clipping seedling tips during transplanting.",
+      "limitations": "This records practices listed under a disease heading; it does not diagnose a crop or establish treatment effectiveness. Chemical and fertilizer directions are omitted. Confirm disease identification and local applicability with a qualified agricultural officer."
+    },
+    {
+      "evidence_id": "EV-KB-KB-ICAR-KHARIF-2025-PADDY-TRAP-BARRIER",
+      "document_id": "KB-ICAR-KHARIF-2025-PADDY-TRAP-BARRIER",
+      "crop_id": "paddy",
+      "crop_stage": "15 days after transplanting",
+      "concern": "pest_disease",
+      "source_title": "ICAR Kharif Agro-Advisories for Farmers 2025",
+      "institution": "Indian Council of Agricultural Research (ICAR), New Delhi",
+      "original_url": "https://icar.gov.in/sites/default/files/Circulars/ICAR%20En-Kharif%20Agro-Advisories%20for%20Farmers%202025.pdf",
+      "publication_date": "May 2025",
+      "page_reference": "PDF p.22 / printed p.76",
+      "source_section": "Andhra Pradesh paddy, Trap Barrier System (TBS)",
+      "applicability": {
+        "state": "Andhra Pradesh",
+        "districts": [],
+        "seasons": ["Kharif"]
+      },
+      "source_verification_status": "source_verified",
+      "source_access_status": "pdf_verified",
+      "expert_review_status": "expert_review_required",
+      "evidence_status": "expert_review_required",
+      "source_fact": "The source describes a trap-barrier system erected around the crop 15 days after transplanting and says traps should be checked daily and emptied or replaced.",
+      "limitations": "The publication does not map this practice to specific districts in the cited passage. Its timing is a source practice, not a weather-risk threshold. Confirm suitability and safe installation locally."
+    },
+    {
+      "evidence_id": "EV-KB-KB-GNUT-POP-ICAR-IIGR-AP-CALENDAR",
+      "document_id": "KB-GNUT-POP-ICAR-IIGR-AP-CALENDAR",
+      "crop_id": "groundnut",
+      "crop_stage": "Sowing through maturity and harvest",
+      "growth_stage_id": null,
+      "concern": "cultivation_calendar",
+      "source_title": "Package of practices (PoP’s)of groundnut for different states",
+      "institution": "ICAR–Indian Institute of Groundnut Research (ICAR-IIGR)",
+      "original_url": "https://icar-iigr.org.in/wp-content/uploads/2018/12/Package-of-Practices.pdf",
+      "publication_date": "2018 (PDF creation metadata and upload path; publication year not printed)",
+      "page_reference": "PDF pp.1, 3 (Andhra Pradesh sowing time; crop duration and harvest)",
+      "source_section": "Andhra Pradesh: Sowing time; Crop duration; Harvesting",
+      "applicability": {
+        "state": "Andhra Pradesh",
+        "districts": [],
+        "seasons": ["Kharif", "Rabi"]
+      },
+      "source_verification_status": "source_verified",
+      "source_access_status": "pdf_verified",
+      "expert_review_status": "expert_review_required",
+      "evidence_status": "expert_review_required",
+      "source_fact": "The Andhra Pradesh section lists Kharif sowing from 15 June to 31 July and Rabi sowing in November–December. It gives crop durations of 100–110 days for Kharif and 110–120 days for Rabi and says harvest is done after 80% of pods mature.",
+      "limitations": "The document does not print a publication year; 2018 is inferred only from PDF creation metadata and the URL upload path. This older state-level reference is not district-specific or a current local calendar. Its dates and maturity description are not FarmShield risk thresholds."
+    },
+    {
+      "evidence_id": "EV-KB-KB-GNUT-POP-ICAR-IIGR-AP-VARIETIES",
+      "document_id": "KB-GNUT-POP-ICAR-IIGR-AP-VARIETIES",
+      "crop_id": "groundnut",
+      "crop_stage": "Variety selection before sowing",
+      "growth_stage_id": null,
+      "concern": "variety_selection",
+      "source_title": "Package of practices (PoP’s)of groundnut for different states",
+      "institution": "ICAR–Indian Institute of Groundnut Research (ICAR-IIGR)",
+      "original_url": "https://icar-iigr.org.in/wp-content/uploads/2018/12/Package-of-Practices.pdf",
+      "publication_date": "2018 (PDF creation metadata and upload path; publication year not printed)",
+      "page_reference": "PDF p.1",
+      "source_section": "Andhra Pradesh: Varieties",
+      "applicability": {
+        "state": "Andhra Pradesh",
+        "districts": [],
+        "seasons": ["Kharif", "Rabi"]
+      },
+      "source_verification_status": "source_verified",
+      "source_access_status": "pdf_verified",
+      "expert_review_status": "expert_review_required",
+      "evidence_status": "expert_review_required",
+      "source_fact": "The source lists Spanish types Kadiri-6, Narayani, ICGV-91114, Kadiri-9, Harithandhra, Anantha, Dharani, TAG-24, Greeshma, Tirupati-4, Kadiri Amaravathi and Kadiri Chitrvathi, and Virginia type Kadiri 7 Bold, under Andhra Pradesh.",
+      "limitations": "This is a historical list, not a current cultivar endorsement or a district-level recommendation. Confirm seed availability and local suitability with a qualified agricultural officer."
+    },
+    {
+      "evidence_id": "EV-KB-KB-GNUT-POP-ICAR-IIGR-AP-NUTRIENTS",
+      "document_id": "KB-GNUT-POP-ICAR-IIGR-AP-NUTRIENTS",
+      "crop_id": "groundnut",
+      "crop_stage": "General nutrient management",
+      "growth_stage_id": null,
+      "concern": "nutrient_management",
+      "source_title": "Package of practices (PoP’s)of groundnut for different states",
+      "institution": "ICAR–Indian Institute of Groundnut Research (ICAR-IIGR)",
+      "original_url": "https://icar-iigr.org.in/wp-content/uploads/2018/12/Package-of-Practices.pdf",
+      "publication_date": "2018 (PDF creation metadata and upload path; publication year not printed)",
+      "page_reference": "PDF p.1",
+      "source_section": "Andhra Pradesh: Manure and Fertilizers",
+      "applicability": {
+        "state": "Andhra Pradesh",
+        "districts": [],
+        "seasons": ["Kharif", "Rabi"]
+      },
+      "source_verification_status": "source_verified",
+      "source_access_status": "pdf_verified",
+      "expert_review_status": "expert_review_required",
+      "evidence_status": "expert_review_required",
+      "source_fact": "The source states that manure and fertilizer use must follow soil-test-based recommendations and mentions organic amendments and biofertilizer practices.",
+      "limitations": "Numerical fertilizer, amendment and seed-treatment doses are intentionally omitted. This older state-level source does not establish a personalized recommendation; base nutrient decisions on current soil tests and qualified local advice."
+    },
+    {
+      "evidence_id": "EV-KB-KB-GNUT-POP-ICAR-IIGR-AP-IRRIGATION",
+      "document_id": "KB-GNUT-POP-ICAR-IIGR-AP-IRRIGATION",
+      "crop_id": "groundnut",
+      "crop_stage": "Flowering, peg penetration (pegging), and pod development",
+      "growth_stage_id": "pegging",
+      "concern": "water_management",
+      "source_title": "Package of practices (PoP’s)of groundnut for different states",
+      "institution": "ICAR–Indian Institute of Groundnut Research (ICAR-IIGR)",
+      "original_url": "https://icar-iigr.org.in/wp-content/uploads/2018/12/Package-of-Practices.pdf",
+      "publication_date": "2018 (PDF creation metadata and upload path; publication year not printed)",
+      "page_reference": "PDF p.2",
+      "source_section": "Andhra Pradesh: Irrigation management; soil-moisture conservation",
+      "applicability": {
+        "state": "Andhra Pradesh",
+        "districts": [],
+        "seasons": ["Kharif", "Rabi"]
+      },
+      "source_verification_status": "source_verified",
+      "source_access_status": "pdf_verified",
+      "expert_review_status": "expert_review_required",
+      "evidence_status": "expert_review_required",
+      "source_fact": "The source identifies flowering, peg penetration and pod development as critical irrigation stages. It describes an irrigated schedule of eight to nine irrigations at ten-day intervals, with the last at 90–95 days after sowing, and rainfed soil-moisture conservation using groundnut-shell mulch.",
+      "limitations": "These are practices reported by an older source, not a weather trigger or personalized schedule. Soil, rainfall, cultivar, water availability and current local recommendations affect suitability; the source does not identify Guntur-specific conditions."
+    },
+    {
+      "evidence_id": "EV-KB-KB-GNUT-POP-ICAR-IIGR-AP-CULTURAL",
+      "document_id": "KB-GNUT-POP-ICAR-IIGR-AP-CULTURAL",
+      "crop_id": "groundnut",
+      "crop_stage": "Early crop and field-management period",
+      "growth_stage_id": null,
+      "concern": "weed_and_pest_management",
+      "source_title": "Package of practices (PoP’s)of groundnut for different states",
+      "institution": "ICAR–Indian Institute of Groundnut Research (ICAR-IIGR)",
+      "original_url": "https://icar-iigr.org.in/wp-content/uploads/2018/12/Package-of-Practices.pdf",
+      "publication_date": "2018 (PDF creation metadata and upload path; publication year not printed)",
+      "page_reference": "PDF p.1–2",
+      "source_section": "Andhra Pradesh: Weed management; intercropping; foliar-disease and field-hygiene entries",
+      "applicability": {
+        "state": "Andhra Pradesh",
+        "districts": [],
+        "seasons": ["Kharif", "Rabi"]
+      },
+      "source_verification_status": "source_verified",
+      "source_access_status": "pdf_verified",
+      "expert_review_status": "expert_review_required",
+      "evidence_status": "expert_review_required",
+      "source_fact": "Among its non-chemical practices, the source describes inter-cultivation and hand-weeding, intercrops and border or trap crops, removing Parthenium before flowering, and destroying plants identified in the source as PBND-infected.",
+      "limitations": "Chemical pest-control and herbicide prescriptions are excluded. The source does not validate diagnosis, treatment effectiveness or district-level suitability; do not identify disease from this general reference alone."
+    }
+  ],
+  "crops": [
+    {
+      "crop_id": "paddy",
+      "growth_stage_ids": [
+        "nursery",
+        "transplanting_establishment",
+        "tillering",
+        "panicle_initiation",
+        "flowering",
+        "grain_filling",
+        "maturity_harvest"
+      ],
+      "coverage_note": "Only flowering/high-temperature has a crop-stage source in the risk-evidence registry, and it remains expert-review-required. General 2025 Andhra Pradesh paddy cultivation guidance is listed separately and does not resolve any crop-weather risk gaps."
+    },
+    {
+      "crop_id": "groundnut",
+      "growth_stage_ids": [
+        "emergence_seedling",
+        "vegetative",
+        "flowering",
+        "pegging",
+        "pod_formation",
+        "pod_development",
+        "maturity_harvest"
+      ],
+      "coverage_note": "The accessible ICAR abstract covers experimental water-stress treatment at flowering, pegging, pod formation and pod development; these are not operational weather rules. Other stage-concern combinations are explicitly insufficient."
+    }
+  ],
+  "source_catalog": [
+    {
+      "source_id": "SRC-IMD-RAIN-2024",
+      "url": "https://rsmcnewdelhi.imd.gov.in/uploads/archive/21/21_e66343_PRESS%20RELEASE%2011%20dated%2018th%20%20September%202024.pdf",
+      "publisher": "India Meteorological Department",
+      "source_date": "2024-09-18",
+      "retrieved_at": "2026-11-01",
+      "access_status": "pdf_verified",
+      "scope": "Meteorological rainfall amount classes only; not crop-specific evidence.",
+      "retained_copy": false,
+      "reuse_terms_checked": false
+    },
+    {
+      "source_id": "SRC-JIRCAS-JARQ-RICE",
+      "url": "https://www.jircas.go.jp/sites/default/files/publication/jarq/11-3-190-191_0.pdf",
+      "publisher": "JARQ / JIRCAS; research conducted at IRRI",
+      "source_date": "1977",
+      "retrieved_at": "2026-11-01",
+      "access_status": "pdf_verified",
+      "scope": "Two-page controlled phytotron study; not Andhra Pradesh field guidance.",
+      "retained_copy": false,
+      "reuse_terms_checked": false,
+      "retrieval_note": "Downloaded temporarily for bibliographic and experimental-window verification; temporary copy deleted. Only a short paraphrase and citation are retained."
+    },
+    {
+      "source_id": "SRC-ICAR-AAZ-GROUNDNUT-WATER",
+      "url": "https://epubs.icar.org.in/index.php/AAZ/article/view/66171",
+      "publisher": "Annals of Arid Zone (ICAR)",
+      "source_date": "2016-12-21",
+      "retrieved_at": "2026-11-01",
+      "access_status": "abstract_only",
+      "scope": "Abstract reports experiment-defined water-stress treatment periods; full article was not available from the source page.",
+      "retained_copy": false,
+      "reuse_terms_checked": false
+    },
+    {
+      "source_id": "SRC-ICAR-IIGR-CROP-PRODUCTION",
+      "url": "https://icar-iigr.org.in/crop-production/",
+      "publisher": "ICAR–Indian Institute of Groundnut Research",
+      "source_date": null,
+      "retrieved_at": "2026-11-01",
+      "access_status": "page_verified",
+      "scope": "Official page summarizes multi-location groundnut practices and names Jagtial and Kadiri in some cropping-system recommendations; publication/trial dates are absent.",
+      "retained_copy": false,
+      "reuse_terms_checked": false
+    },
+    {
+      "source_id": "SRC-IMD-AMARAVATI-AP-BULLETIN",
+      "url": "https://mausam.imd.gov.in/amaravati/mcdata/APvaf.pdf",
+      "publisher": "India Meteorological Department, Amaravati",
+      "source_date": "2026-10-30",
+      "retrieved_at": "2026-11-01",
+      "access_status": "pdf_verified",
+      "scope": "One-page district forecast bulletin with issue number 87/2026 and five forecast dates; time-sensitive weather product, not crop-risk threshold evidence.",
+      "retained_copy": false,
+      "reuse_terms_checked": false,
+      "retrieval_note": "Downloaded temporarily to verify document date and structure; temporary copy deleted. It is not seeded because the forecast expires."
+    },
+    {
+      "source_id": "SRC-ICRISAT-GROUNDNUT-HEAT",
+      "url": "https://oar.icrisat.org/1009/1/62806.pdf",
+      "publisher": "ICRISAT / University of Reading",
+      "source_date": null,
+      "retrieved_at": "2026-11-01",
+      "access_status": "inaccessible_http_401",
+      "scope": "The repository redirects to login and returns HTTP 401; former seed claims are unverified and not used for grounding.",
+      "retained_copy": false,
+      "reuse_terms_checked": false
+    },
+    {
+      "source_id": "SRC-SPRINGER-FAO-IAEA-RICE",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-319-77338-4_2",
+      "publisher": "Springer / Joint FAO-IAEA Division",
+      "source_date": null,
+      "retrieved_at": "2026-11-01",
+      "access_status": "inaccessible_http_406",
+      "scope": "Could not independently verify chapter claims; no claims are extracted or used for grounding.",
+      "retained_copy": false,
+      "reuse_terms_checked": false
+    },
+    {
+      "source_id": "SRC-ANGRAU-PORTAL",
+      "url": "https://angrau.ac.in/",
+      "publisher": "Acharya N. G. Ranga Agricultural University",
+      "source_date": null,
+      "retrieved_at": "2026-11-01",
+      "access_status": "intermittent_transport_failure",
+      "scope": "No usable crop-specific package-of-practices document was verified in this research pass; no claims are entered.",
+      "retained_copy": false,
+      "reuse_terms_checked": false
+    },
+    {
+      "source_id": "SRC-TNAU-AGRITECH",
+      "url": "https://agritech.tnau.ac.in/",
+      "publisher": "Tamil Nadu Agricultural University",
+      "source_date": null,
+      "retrieved_at": "2026-11-01",
+      "access_status": "index_only",
+      "scope": "General index was accessible; guessed rice and groundnut production paths returned 404. No claim is entered, and Tamil Nadu material would not alone validate Andhra Pradesh applicability.",
+      "retained_copy": false,
+      "reuse_terms_checked": false
+    },
+    {
+      "source_id": "SRC-IRRI-RICE-KNOWLEDGE-BANK",
+      "url": "https://www.knowledgebank.irri.org/",
+      "publisher": "International Rice Research Institute",
+      "source_date": null,
+      "retrieved_at": "2026-11-01",
+      "access_status": "transport_failure",
+      "scope": "Source could not be retrieved in this pass; no claims are entered.",
+      "retained_copy": false,
+      "reuse_terms_checked": false
+    },
+    {
+      "source_id": "SRC-ICAR-KHARIF-ADVISORIES-2025",
+      "url": "https://icar.gov.in/sites/default/files/Circulars/ICAR%20En-Kharif%20Agro-Advisories%20for%20Farmers%202025.pdf",
+      "publisher": "Indian Council of Agricultural Research (ICAR), New Delhi",
+      "source_date": "May 2025",
+      "retrieved_at": "2026-11-02",
+      "access_status": "pdf_verified",
+      "scope": "Andhra Pradesh paddy source facts from printed pages 54 and 76; general Kharif guidance only, not district-specific risk validation.",
+      "retained_copy": true,
+      "reuse_terms_checked": true,
+      "reuse_note": "The publication states that it may be used/shared for non-commercial purposes with proper acknowledgement."
+    },
+    {
+      "source_id": "SRC-ICAR-IIGR-GROUNDNUT-POP",
+      "url": "https://icar-iigr.org.in/wp-content/uploads/2018/12/Package-of-Practices.pdf",
+      "publisher": "ICAR–Indian Institute of Groundnut Research (ICAR-IIGR)",
+      "source_date": "2018 (PDF creation metadata and upload path; publication year not printed)",
+      "retrieved_at": "2026-11-02",
+      "access_status": "pdf_verified",
+      "scope": "The official 17-page PDF was directly accessible and checked. Andhra Pradesh content appears on PDF pages 1–3; the source lists general state-level practices, not Guntur-specific validation.",
+      "retained_copy": true,
+      "reuse_terms_checked": false,
+      "retrieval_note": "The repository copy in knowledge/sources was already present; no duplicate download was made. Numerical fertilizer and chemical-control prescriptions are not included in assistant guidance."
+    },
+    {
+      "source_id": "SRC-RARS-MTU-RICE-PRACTICES",
+      "url": "https://rarsmtu.org/wp-content/uploads/2021/Package%20of%20Practices/Rice.pdf",
+      "publisher": "RARS MTU (source host; publisher details could not be checked in the provided copy)",
+      "source_date": null,
+      "retrieved_at": "2026-11-02",
+      "access_status": "unavailable",
+      "scope": "The URL failed DNS resolution. The existing 61-page local PDF renders as blank pages, and its companion text has no page breaks; no page-cited agricultural claims were added.",
+      "retained_copy": true,
+      "reuse_terms_checked": false,
+      "retrieval_note": "The provided files were inspected in place; no duplicate download was attempted. Request a readable source copy or restored official URL before extracting evidence."
+    }
+  ],
+  "rule_validation_file": "rule_validation_records.json",
+  "rule_safety_invariant": "Every configured risk rule remains disabled until its source, variable, units, temporal window, crop-stage applicability, local validation and expert approval are documented. Window mismatch cannot be overridden by ALLOW_UNVERIFIED_RULES."
+}
