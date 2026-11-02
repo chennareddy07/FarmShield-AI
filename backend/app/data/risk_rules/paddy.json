@@ -1,0 +1,28 @@
+{
+  "ruleset_id": "paddy",
+  "rule_version": "0.1.0",
+  "rules": [
+    {
+      "rule_id": "PADDY-HEAT-FLOWERING",
+      "crop_id": "paddy",
+      "growth_stage_ids": ["flowering"],
+      "risk_category": "high_temperature",
+      "weather_variable": "temperature_max_c",
+      "comparison_operator": ">",
+      "threshold": 35.0,
+      "threshold_unit": "C",
+      "duration_or_window": {"type": "daily", "days": 7},
+      "source_time_window": "flowering exposure duration in controlled phytotron study",
+      "weather_input_time_window": "Open-Meteo local-calendar-day maximum 2 m air temperature",
+      "window_alignment_verified": false,
+      "severity": "high",
+      "source_reference": {"title": "Critical temperature and duration for high temperature-induced sterility in indica rice (TARC Notes, JARQ 11(3))", "publisher": "JIRCAS / IRRI phytotron study", "url": "https://www.jircas.go.jp/sites/default/files/publication/jarq/11-3-190-191_0.pdf", "publication_date": null},
+      "source_excerpt": "Heat-induced spikelet sterility in indica rice at flowering; 35 C used as the screening threshold. Other literature cites 33 C.",
+      "effective_from": "2026-01-01",
+      "review_status": "needs_review",
+      "rule_version": "0.1.0",
+      "recommended_action": null,
+      "notes": "DISABLED. Source is a phytotron (controlled-environment) study, not ICAR/ANGRAU field guidance; 33 vs 35 C disagreement; duration of exposure matters and is not represented by a daily maximum; severity is unassigned by the source. Needs agronomist sign-off and a matching temporal measurement before enabling."
+    }
+  ]
+}

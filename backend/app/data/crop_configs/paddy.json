@@ -1,0 +1,25 @@
+{
+  "crop_id": "paddy",
+  "crop_name": "Paddy",
+  "crop_name_i18n": {"en": "Paddy", "te": "వరి"},
+  "supported_regions": ["Andhra Pradesh"],
+  "growth_stages": [
+    {"stage_id": "nursery", "order": 1, "name": {"en": "Nursery", "te": "నారుమడి"}},
+    {"stage_id": "transplanting_establishment", "order": 2, "name": {"en": "Transplanting / establishment", "te": "నాట్లు / పైరు స్థాపన"}},
+    {"stage_id": "tillering", "order": 3, "name": {"en": "Vegetative: tillering", "te": "శాఖీయ దశ: పిలకలు వేయడం"}},
+    {"stage_id": "panicle_initiation", "order": 4, "name": {"en": "Panicle initiation / booting", "te": "కంకి ఏర్పడే దశ"}},
+    {"stage_id": "flowering", "order": 5, "name": {"en": "Flowering (heading to anthesis)", "te": "పూత దశ"}},
+    {"stage_id": "grain_filling", "order": 6, "name": {"en": "Grain filling (milk to dough)", "te": "గింజ నింపే దశ"}},
+    {"stage_id": "maturity_harvest", "order": 7, "name": {"en": "Maturity / harvest", "te": "పక్వత / కోత"}}
+  ],
+  "required_risk_categories": ["rainfall", "excess_rainfall", "dry_spell", "high_temperature", "low_temperature", "humidity", "wind", "severe_weather_warning"],
+  "advisory_topics": ["heat_stress", "rainfall", "water_management"],
+  "crop_calendar_reference": null,
+  "source_references": [
+    {"title": "IRRI Rice Knowledge Bank (growth-stage reference)", "publisher": "International Rice Research Institute", "url": "https://www.knowledgebank.irri.org/"}
+  ],
+  "configuration_version": "0.1.0",
+  "last_reviewed_at": null,
+  "review_status": "needs_review",
+  "review_note": "Stage catalogue is a standard 7-step simplification seeded from general rice-physiology references. It has NOT been reviewed by an ANGRAU/ICAR agronomist. Durations are intentionally omitted because they vary by variety and season."
+}

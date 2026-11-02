@@ -1,0 +1,28 @@
+{
+  "ruleset_id": "groundnut",
+  "rule_version": "0.1.0",
+  "rules": [
+    {
+      "rule_id": "GNUT-HEAT-REPRO",
+      "crop_id": "groundnut",
+      "growth_stage_ids": ["flowering", "pod_development"],
+      "risk_category": "high_temperature",
+      "weather_variable": "temperature_max_c",
+      "comparison_operator": ">",
+      "threshold": 34.0,
+      "threshold_unit": "C",
+      "duration_or_window": {"type": "daily", "days": 7},
+      "source_time_window": "study-defined high-temperature exposure during reproductive stages",
+      "weather_input_time_window": "Open-Meteo local-calendar-day maximum 2 m air temperature",
+      "window_alignment_verified": false,
+      "severity": "moderate",
+      "source_reference": {"title": "Effect of high temperature and water stress on groundnuts under field conditions (ICRISAT, Patancheru)", "publisher": "ICRISAT", "url": "https://oar.icrisat.org/1009/1/62806.pdf", "publication_date": null},
+      "source_excerpt": "Groundnuts in the semi-arid tropics are often exposed to high temperature (>34 C) during flowering and pod development.",
+      "effective_from": "2026-01-01",
+      "review_status": "needs_review",
+      "rule_version": "0.1.0",
+      "recommended_action": null,
+      "notes": "DISABLED. The source describes >34 C as an exposure studied, not a validated damage threshold; source exposure duration is not represented by a daily maximum; severity is unassigned; not ICAR/ANGRAU operational guidance."
+    }
+  ]
+}

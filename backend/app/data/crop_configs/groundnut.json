@@ -1,0 +1,25 @@
+{
+  "crop_id": "groundnut",
+  "crop_name": "Groundnut",
+  "crop_name_i18n": {"en": "Groundnut", "te": "వేరుశనగ"},
+  "supported_regions": ["Andhra Pradesh"],
+  "growth_stages": [
+    {"stage_id": "emergence_seedling", "order": 1, "name": {"en": "Emergence / seedling", "te": "మొలక దశ"}},
+    {"stage_id": "vegetative", "order": 2, "name": {"en": "Vegetative growth", "te": "శాఖీయ పెరుగుదల"}},
+    {"stage_id": "flowering", "order": 3, "name": {"en": "Flowering", "te": "పూత దశ"}},
+    {"stage_id": "pegging", "order": 4, "name": {"en": "Pegging", "te": "ఊడలు దిగే దశ"}},
+    {"stage_id": "pod_formation", "order": 5, "name": {"en": "Pod formation", "te": "కాయ ఏర్పడే దశ"}},
+    {"stage_id": "pod_development", "order": 6, "name": {"en": "Pod development", "te": "కాయ అభివృద్ధి దశ"}},
+    {"stage_id": "maturity_harvest", "order": 7, "name": {"en": "Maturity / harvest", "te": "పక్వత / కోత"}}
+  ],
+  "required_risk_categories": ["rainfall", "excess_rainfall", "dry_spell", "high_temperature", "low_temperature", "humidity", "wind", "severe_weather_warning"],
+  "advisory_topics": ["heat_stress", "water_stress", "rainfall"],
+  "crop_calendar_reference": null,
+  "source_references": [
+    {"title": "Yield, Reproductive Efficiency and Quality of Groundnut as Influenced by Water Stress at Different Growth Stages", "publisher": "Annals of Arid Zone (ICAR)", "url": "https://epubs.icar.org.in/index.php/AAZ/article/view/66171"}
+  ],
+  "configuration_version": "0.1.0",
+  "last_reviewed_at": null,
+  "review_status": "needs_review",
+  "review_note": "Stage names follow the flowering / pegging / pod formation / pod development terminology used in the cited ICAR paper plus emergence, vegetative and maturity. Not reviewed by an ANGRAU/ICAR agronomist. Paddy and groundnut intentionally have different catalogues."
+}

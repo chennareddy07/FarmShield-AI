@@ -1,0 +1,13 @@
+{
+  "region_id": "andhra_pradesh",
+  "state": "Andhra Pradesh",
+  "country_code": "IN",
+  "review_status": "needs_review",
+  "review_note": "District names reflect the 26-district structure known to the author. AP districts have been reorganised before and may change again - verify against the current official Government of Andhra Pradesh list. Coordinates are intentionally NOT stored; they are resolved live through the geocoder.",
+  "districts": [
+    "Srikakulam", "Parvathipuram Manyam", "Vizianagaram", "Visakhapatnam", "Alluri Sitharama Raju", "Anakapalli",
+    "Kakinada", "East Godavari", "Konaseema", "Eluru", "West Godavari", "NTR", "Krishna", "Palnadu", "Guntur",
+    "Bapatla", "Prakasam", "Nellore", "Kurnool", "Nandyal", "Anantapur", "Sri Sathya Sai", "Kadapa", "Annamayya",
+    "Chittoor", "Tirupati"
+  ]
+}
