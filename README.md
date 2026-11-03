@@ -1,5 +1,6 @@
 # FarmShield AI
-(VERCEL DEPLOYED LINK:https://farm-shield-ai-eta.vercel.app/)
+(VERCEL DEPLOYED LINK:https://farm-shield-ai-eta.vercel.app/).
+To access admin page use token-"123"
 Weather-aware crop-risk decision support for paddy and groundnut farmers in Andhra Pradesh (English + Telugu).
 Built from `specs/requirements.md`. **Weather is real provider data or an explicit "unavailable" state — nothing is ever simulated.
 Risk levels come only from a deterministic, source-referenced rule engine; the AI layer can only explain them.**
